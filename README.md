@@ -49,6 +49,7 @@ int main() {
 - in C++ is a special method that is automatically called when an object of a class is created.   
 - **constructor** is special type of function that is used to initialized the object.
 - it's name is the same in which class it's belongs to.
+- no return type like(void, int etc.)
 
    
 <ins>**destructor**</ins>
