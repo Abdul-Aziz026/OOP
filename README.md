@@ -7,7 +7,7 @@ class is a template from which individual object can be created.
 Object is a class type variable.
 
 ### class and class object declaration.
-```
+```cpp
 #include <iostream>
 
 class MyClass {
