@@ -115,3 +115,11 @@ There are three main access modifiers in C++: **public, private, and protected.*
 <ins>Protected:</ins>
 - Similar to private, members declared as protected are not accessible from outside the class.
 - However, they can be accessed by derived classes (inheritance).
+```cpp
+class BaseClass {
+// accessmode...public/private/protected
+public:
+    int protectedVar;
+    void protectedFunction();
+};
+```
