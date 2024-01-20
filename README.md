@@ -1,5 +1,5 @@
 # OOP
-## .........................(class, Object, constructor, distructor, Access Modifier).................................
+## .............................@(class, Object, constructor, distructor, Access Modifier)....................................
 ### what is class?
 class is a template from which individual object can be created.
 
