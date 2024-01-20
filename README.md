@@ -42,3 +42,43 @@ int main() {
 ```
 
 #### <ins>Importent Note:</ins> class state in variable and behaviour is function.
+
+
+### what is constructor and distructor?
+A **constructor** in C++ is a special method that is automatically called when an object of a class is created.   
+A **destructor** works opposite to constructor; it destructs the objects of classes.Destructor is an instance member function that is called automatically whenever an object is going to be destroyed.
+```cpp
+#include <iostream>
+using namespace std;
+
+class MyClass {
+    int x, y;
+public:
+    // Default constructor
+    MyClass(){
+        cout << "Default Constructor Called...\n";
+    }
+
+    // Parameterized constructor
+    MyClass(int x, int y){
+        cout << "Parameterized Constructor Called...\n";
+    }
+
+    // Destructor declaration
+    ~MyClass(){
+        cout << "Distroy object...\n";
+    }
+};
+
+int main() {
+    // Creating objects and invoking constructors
+    MyClass *obj1 = new MyClass;         // Invokes default constructor
+    delete obj1;                         // distructor called by own
+
+    MyClass obj;                         // Invokes default constructor
+    MyClass obj2(10, 20);                // Invokes parameterized constructor
+    
+    // Destructor is automatically called when objects go out of scope
+    return 0;
+}
+```
