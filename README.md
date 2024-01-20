@@ -129,3 +129,51 @@ public:
 
 ### What is Encapsulation?
 Encapsulation is a key concept in C++ that involves bundling data (variables) and functions (methods) into a single unit called a class. It promotes data security and code organization by hiding the internal details of a class and exposing only what's necessary.
+
+#### Benefits of Encapsulation:
+
+Data Hiding: Keeps internal details private.
+Modularity: Organizes code into self-contained units.
+Flexibility: Allows changing internal implementation without affecting external code.
+#### How it Works:
+Private and Public Members:
+
+private: Accessible only within the class.
+public: Accessible from outside the class.
+Accessors and Mutators:
+
+Accessors (Getters): Provide read-only access to private members.
+Mutators (Setters): Allow controlled modification of private members.
+Example:
+```cpp
+class BankAccount {
+private:
+    // Private members
+    double balance;
+
+public:
+    // Public members
+
+    // Constructor
+    BankAccount(double initialBalance) : balance(initialBalance) {}
+
+    // Accessor (Getter)
+    double getBalance() const {
+        return balance;
+    }
+
+    // Mutator (Setter)
+    void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    // Mutator (Setter)
+    void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        }
+    }
+};
+```
