@@ -100,7 +100,7 @@ int main() {
             Distroy object...
 */
 ```
-##                                                                         Access Modifier
+### Access Modifier
 In C++, access modifiers are keywords that specify the visibility and accessibility of class members (variables and functions) from outside the class.   
 There are three main access modifiers in C++: **public, private, and protected.**
 
@@ -123,3 +123,7 @@ public:
     void protectedFunction();
 };
 ```
+
+
+## Encaptulation
+
