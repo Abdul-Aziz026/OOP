@@ -41,4 +41,4 @@ int main() {
 }
 ```
 
-#### class state in variable and behaviour is variable.
+#### class state in variable and behaviour is function.
