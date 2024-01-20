@@ -45,12 +45,13 @@ int main() {
 
 
 ### what is constructor and distructor?
-A **constructor** in C++ is a special method that is automatically called when an object of a class is created.   
-**constructor** is special type of function that is used to initialized the object.
-it's name is the same in which class it's belongs to.
+- **constructor** in C++ is a special method that is automatically called when an object of a class is created.   
+- **constructor** is special type of function that is used to initialized the object.
+- it's name is the same in which class it's belongs to.
 
    
-A **destructor** works opposite to constructor; it destructs the objects of classes.Destructor is an instance member function that is called automatically whenever an object is going to be destroyed.
+- **destructor** works opposite to constructor; 
+- it destructs the objects of classes.Destructor is an instance member function that is called automatically whenever an object is going to be destroyed.
 ```cpp
 #include <iostream>
 using namespace std;
