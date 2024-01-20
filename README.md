@@ -53,7 +53,8 @@ int main() {
    
 <ins>**destructor**</ins>
 - works opposite to constructor; 
-- it destructs the objects of classes.Destructor is an instance member function that is called automatically whenever an object is going to be destroyed.
+- it destructs the objects of classes.
+- Destructor is an instance member function that is called automatically whenever an object is going to be destroyed.
 ```cpp
 #include <iostream>
 using namespace std;
