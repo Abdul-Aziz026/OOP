@@ -40,3 +40,5 @@ int main() {
     return 0;
 }
 ```
+
+#### class state in variable and behaviour is variable.
