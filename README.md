@@ -127,3 +127,5 @@ public:
 
 ## .................................................................(Encaptulation)......................................................................
 
+### What is Encapsulation?
+Encapsulation is a key concept in C++ that involves bundling data (variables) and functions (methods) into a single unit called a class. It promotes data security and code organization by hiding the internal details of a class and exposing only what's necessary.
