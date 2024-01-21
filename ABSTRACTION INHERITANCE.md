@@ -8,8 +8,8 @@ Abstraction is a fundamental concept in object-oriented programming (OOP) that i
 
 ## Key Principles of Abstraction
 
-- Simplification: Abstraction simplifies complex reality by modeling classes appropriate to the problem.
-- Focus on Relevance: It allows focusing on what an object does instead of how it does it.
-- Reusability: Abstracting functionality into classes allows for code reusability.
-- Modularity: It enhances modularity by separating the implementation and the interface.
+- **Simplification:** Abstraction simplifies complex reality by modeling classes appropriate to the problem.
+- **Focus on Relevance:** It allows focusing on what an object does instead of how it does it.
+- **Reusability:** Abstracting functionality into classes allows for code reusability.
+- **Modularity:** It enhances modularity by separating the implementation and the interface.
 
