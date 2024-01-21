@@ -21,3 +21,5 @@
 9. Initialization and Cleanup
 10. Best Practices
 11. Conclusion
+
+**Link: https://chat.openai.com/c/ba9e6f9b-d655-4f06-88e6-ecd466103988#introduction**
