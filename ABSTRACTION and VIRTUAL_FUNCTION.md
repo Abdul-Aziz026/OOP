@@ -163,7 +163,7 @@ int main() {
 - Object Instantiation: Cannot instantiate objects of the class
 - Derived Class Override Mandatory (must override in derived class)
 
-**Virtual and Pure Virtual Example**
+**Virtual and Pure Virtual Function Example**
 ```cpp
 #include <iostream>
 using namespace std;
