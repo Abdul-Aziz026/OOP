@@ -61,4 +61,43 @@ signed main() {
 **Data Members:**
 - **<ins>Abstract Classes:</ins>** Abstract classes can contain both abstract methods (methods without implementation) and data members (variables with values).
 - **<ins>Interfaces:</ins>** Interfaces are usually more focused on declaring a set of abstract methods. They typically do not include data members. The emphasis is on specifying what methods a class must have rather than what data it must store.
+**Example:**
+```cpp
+  #include <iostream>
 
+// Interface (using abstract class)
+class Printable {
+public:
+    // Pure virtual function (abstract method)
+    virtual void print() const = 0;
+
+    // Optionally, you can have other virtual functions (not pure virtual) or constants.
+    virtual void info() const {
+        std::cout << "This is a printable object." << std::endl;
+    }
+
+    // Virtual destructor (important for base classes)
+    virtual ~Printable() {}
+};
+
+// Concrete class implementing the interface
+class Message : public Printable {
+public:
+    // Implementing the abstract method from Printable
+    void print() const override {
+        std::cout << "This is a printable message." << std::endl;
+    }
+};
+
+int main() {
+    // You cannot instantiate an interface directly.
+    // Printable printable;  // Error!
+
+    // However, you can create objects of classes implementing the interface.
+    Message message;
+    message.print();
+    message.info();  // Accessing the non-pure virtual function from the interface.
+
+    return 0;
+}
+```
