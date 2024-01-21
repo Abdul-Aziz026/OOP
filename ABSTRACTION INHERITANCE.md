@@ -148,3 +148,6 @@ int main() {
     return 0;
 }
 ```
+
+
+### Virtual and Pure Virtual Function 
