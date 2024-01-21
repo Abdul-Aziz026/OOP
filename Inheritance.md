@@ -1,7 +1,4 @@
-## Inheritance
-
-
-Certainly! Below is a comprehensive C++ Inheritance Documentation covering the fundamental concepts, syntax, and best practices related to inheritance in C++. This documentation assumes a basic understanding of C++ programming.
+# Inheritance
 
 ### Table of Contents
 1. Introduction
