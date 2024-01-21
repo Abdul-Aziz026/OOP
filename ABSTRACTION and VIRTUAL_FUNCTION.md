@@ -152,16 +152,16 @@ int main() {
 
 ### Virtual and Pure Virtual Function:
 **Virtual Function:**
-Declaration: virtual void functionName().
-Implementation:	May have a default implementation.
-Object Instantiation:	Can instantiate objects of the class.
-Derived Class Override	Optional (can choose to override).
+- Declaration: virtual void functionName().
+- Implementation:	May have a default implementation.
+- Object Instantiation:	Can instantiate objects of the class.
+- Derived Class Override	Optional (can choose to override).
 
 **Pure Virtual Function:**
-Declaration: virtual void functionName() = 0;
-Implementation:	No implementation in the base class
-Object Instantiation: Cannot instantiate objects of the class
-Derived Class Override Mandatory (must override in derived class)
+- Declaration: virtual void functionName() = 0;
+- Implementation:	No implementation in the base class
+- Object Instantiation: Cannot instantiate objects of the class
+- Derived Class Override Mandatory (must override in derived class)
 
 
 
