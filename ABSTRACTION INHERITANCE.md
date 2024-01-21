@@ -13,7 +13,7 @@ Abstraction is a fundamental concept in object-oriented programming (OOP) that i
 - **Reusability:** Abstracting functionality into classes allows for code reusability.
 - **Modularity:** It enhances modularity by separating the implementation and the interface.
 
-#### Abstract Class example
+#### Abstract Class Example
 ```cpp
 /*Bismillahir Rahmanir Rahim....*/
 #include <iostream>
