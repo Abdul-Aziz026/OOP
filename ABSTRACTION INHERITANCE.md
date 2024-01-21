@@ -52,3 +52,13 @@ signed main() {
           This is Base Show Class
 */
 ```
+
+### Abstract class vs Abstract Class...
+**Instantiation:**
+- Abstract Classes: You cannot create an object (instance) directly from an abstract class. Abstract classes are like blueprints that need to be extended by other classes.
+- Interfaces: Similarly, you cannot create an object directly from an interface. Interfaces are designed to be implemented by other classes, providing a way to enforce a specific set of behaviors.
+
+**Data Members:**
+- Abstract Classes: Abstract classes can contain both abstract methods (methods without implementation) and data members (variables with values).
+- Interfaces: Interfaces are usually more focused on declaring a set of abstract methods. They typically do not include data members. The emphasis is on specifying what methods a class must have rather than what data it must store.
+
