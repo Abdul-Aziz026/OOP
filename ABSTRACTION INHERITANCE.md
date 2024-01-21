@@ -101,3 +101,49 @@ int main() {
     return 0;
 }
 ```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Interface class
+class Shape {
+public:
+    // Pure virtual functions (no implementation)
+    virtual void draw() const = 0;
+    virtual double area() const = 0;
+
+    // Virtual destructor (important for base classes)
+    virtual ~Shape() {}
+};
+
+// Concrete class implementing the Shape interface
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    Circle(double r) : radius(r) {}
+
+    // Implementing the pure virtual functions from Shape
+    void draw() const override {
+        cout << "Drawing a circle." << endl;
+    }
+
+    double area() const override {
+        return 3.14 * radius * radius;
+    }
+};
+
+int main() {
+    // You cannot instantiate an object of the interface directly.
+    // Shape shape;  // Error!
+
+    // However, you can create objects of classes implementing the interface.
+    Circle circle(5.0);
+    circle.draw();
+    cout << "Area of the circle: " << circle.area() << endl;
+
+    return 0;
+}
+```
