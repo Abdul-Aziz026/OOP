@@ -61,7 +61,7 @@ signed main() {
 **Data Members:**
 - **<ins>Abstract Classes:</ins>** Abstract classes can contain both abstract methods (methods without implementation) and data members (variables with values).
 - **<ins>Interfaces:</ins>** Interfaces are usually more focused on declaring a set of abstract methods. They typically do not include data members. The emphasis is on specifying what methods a class must have rather than what data it must store.
-**Example:**
+### Abstract Class Example...
 ```cpp
   #include <iostream>
 
@@ -101,7 +101,7 @@ int main() {
     return 0;
 }
 ```
-
+### Interface Class Example: 
 ```cpp
 #include <iostream>
 using namespace std;
