@@ -102,6 +102,7 @@ int main() {
 }
 ```
 ### Interface Class Example: 
+- **<ins>Interfaces:</ins>** Interfaces are usually more focused on declaring a set of abstract methods. They typically do not include data members.
 ```cpp
 #include <iostream>
 using namespace std;
