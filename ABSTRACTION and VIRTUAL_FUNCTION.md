@@ -163,5 +163,62 @@ int main() {
 - Object Instantiation: Cannot instantiate objects of the class
 - Derived Class Override Mandatory (must override in derived class)
 
+**Virtual and Pure Virtual Example**
+```cpp
+#include <iostream>
+using namespace std;
 
+// Virtual Function
+class BaseVirtual {
+public:
+    // Virtual function with a default implementation
+    virtual void display() {
+        std::cout << "BaseVirtual class display function" << std::endl;
+    }
+};
+
+// Derived class for Virtual Function
+class DerivedVirtual : public BaseVirtual {
+public:
+    // Override the virtual function
+    void display() override {
+        cout << "DerivedVirtual class display function" << endl;
+    }
+};
+
+// Pure Virtual Function
+class BasePureVirtual {
+public:
+    // Pure virtual function with no implementation
+    virtual void show() = 0;
+};
+
+
+// Derived class for Pure Virtual Function Example
+class DerivedPureVirtual : public BasePureVirtual {
+public:
+    // Must provide an implementation for the pure virtual function
+    void show() override {
+        cout << "DerivedPureVirtual class show function" << endl;
+    }
+};
+
+int main() {
+    // Virtual Function
+    BaseVirtual baseVirtual;
+    baseVirtual.display();  // Calls the default implementation
+
+    DerivedVirtual derivedVirtual;
+    derivedVirtual.display();  // Calls the overridden implementation
+
+    // Cannot instantiate objects of the abstract class
+    // BasePureVirtual basePureVirtual;  // Error!
+
+    DerivedPureVirtual derivedPureVirtual;
+    derivedPureVirtual.show();  // Calls the overridden implementation
+
+    return 0;
+}
+
+```
 
