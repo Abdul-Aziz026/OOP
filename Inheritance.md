@@ -18,9 +18,9 @@
    - Single inheritance.
    - Multi-level inheritance.
    - Multiple inheritance.
-   - Multipath inheritance.
    - Hierarchical Inheritance.
    - Hybrid Inheritance.
+   - Virtual Inheritance
 6. Diamond Problem
 7. Initialization and Cleanup
 8. Best Practices
