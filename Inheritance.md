@@ -22,4 +22,62 @@
 10. Best Practices
 11. Conclusion
 
+### Introduction:
+Inheritance is a key concept in object-oriented programming (OOP) that allows a class to inherit properties and behaviors from another class. It promotes code reusability and establishes a relationship between classes.
+
+### Inheritance Basics
+#### Derived Classes
+A derived class is a class that inherits properties and behaviors from another class, called the base class or parent class.
+Example:
+```cpp
+// Base class
+class Animal {
+public:
+    void eat() {
+        // Implementation
+    }
+};
+
+// Derived class
+class Dog : public Animal {
+public:
+    void bark() {
+        // Implementation
+    }
+};
+```
+#### Base Classes
+A base class is a class whose properties and behaviors are inherited by another class.
+```cpp
+// Base class
+class Shape {
+public:
+    virtual void draw() {
+        // Implementation
+    }
+};
+
+```
+### Access Specifiers
+```cpp
+// PUBLIC
+class Derived : public Base {
+    // Public and protected members of Base are accessible here.
+    // public public become public, protected member become Protected
+};
+//PROTECTED
+class Derived : protected Base {
+    // Public and protected members of Base are now protected in Derived.
+};
+//PRIVATE
+class Derived : private Base {
+    // Public and protected members of Base are now private in Derived.
+};
+
+```
+
+
+
+
+
 **Link: https://chat.openai.com/c/ba9e6f9b-d655-4f06-88e6-ecd466103988#introduction**
