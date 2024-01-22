@@ -79,7 +79,48 @@ class Derived : private Base {
 };
 
 ```
+### Virtual Functions and Polymorphism
+#### Virtual Functions
+Virtual functions allow a function in the base class to be overridden by a function in the derived class.
+```cpp
+class Shape {
+public:
+    virtual void draw() {
+        // Implementation
+    }
+};
 
+class Circle : public Shape {
+public:
+    void draw() override {
+        // Implementation specific to Circle
+    }
+};
+
+```
+#### Pure Virtual Functions
+Pure virtual functions have no implementation in the base class and must be overridden in derived classes.
+```cpp
+class Shape {
+public:
+    virtual void draw() = 0; // Pure virtual function
+};
+
+class Circle : public Shape {
+public:
+    void draw() override {
+        // Implementation specific to Circle
+    }
+};
+
+```
+#### Polymorphism
+Polymorphism allows a base class pointer to refer to objects of derived classes and invoke their specific methods.
+Example:
+```cpp
+Shape* shapePtr = new Circle();
+shapePtr->draw(); // Calls draw() of the Circle class.
+```
 
 
 
