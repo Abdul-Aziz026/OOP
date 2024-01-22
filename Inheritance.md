@@ -328,4 +328,62 @@ int main() {
 }
 
 ```
+### Diamond Problem
+The diamond problem occurs in languages with multiple inheritance when a class inherits from two classes that have a common ancestor.
+```cpp
+class A {
+    // Implementation
+};
+
+class B : public A {
+    // Implementation
+};
+
+class C : public A {
+    // Implementation
+};
+
+class D : public B, public C {
+    // Ambiguity arises when accessing A's members from D.
+};
+```
+
+### Initialization and Cleanup
+#### Constructor Initialization
+
+```cpp
+class Base {
+public:
+    Base(int value) : data(value) {
+        // Constructor implementation
+    }
+private:
+    int data;
+};
+
+class Derived : public Base {
+public:
+    Derived(int value) : Base(value) {
+        // Constructor implementation
+    }
+};
+
+```
+#### Destructor Cleanup
+```cpp
+class Base {
+public:
+    ~Base() {
+        // Destructor implementation
+    }
+};
+
+class Derived : public Base {
+public:
+    ~Derived() {
+        // Destructor implementation
+    }
+};
+```
+
 **Link: https://chat.openai.com/c/ba9e6f9b-d655-4f06-88e6-ecd466103988#introduction**
