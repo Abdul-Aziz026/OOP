@@ -6,7 +6,7 @@
    - Derived Classes
    - Base Classes
    - Access Specifiers
-3. Types of Inheritance
+3. Access Types of Inheritance
    - Public Inheritance
    - Protected Inheritance
    - Private Inheritance
@@ -14,13 +14,17 @@
    - Virtual Functions
    - Pure Virtual Functions
    - Polymorphism
-5. Multiple Inheritance
-6. Multilevel Inheritance
-7. Hierarchical Inheritance
-8. Diamond Problem
-9. Initialization and Cleanup
-10. Best Practices
-11. Conclusion
+5. Types of inheritance
+   - Single inheritance.
+   - Multi-level inheritance.
+   - Multiple inheritance.
+   - Multipath inheritance.
+   - Hierarchical Inheritance.
+   - Hybrid Inheritance.
+6. Diamond Problem
+7. Initialization and Cleanup
+8. Best Practices
+9. Conclusion
 
 ### Introduction:
 Inheritance is a key concept in object-oriented programming (OOP) that allows a class to inherit properties and behaviors from another class. It promotes code reusability and establishes a relationship between classes.
@@ -122,6 +126,8 @@ Polymorphism allows a base class pointer to refer to objects of derived classes 
 Shape* shapePtr = new Circle();
 shapePtr->draw(); // Calls draw() of the Circle class.
 ```
+
+### Multiple Inheritance
 
 
 
