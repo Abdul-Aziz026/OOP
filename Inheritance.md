@@ -58,7 +58,11 @@ public:
 };
 
 ```
-### Access Specifiers
+### Access Specifiers && Types of Inheritance
+      - Public Access Specifier / Inheritance.
+      - Protected Access Specifier / Inheritance.
+      - Private Access Specifier / Inheritance.
+      
 ```cpp
 // PUBLIC
 class Derived : public Base {
