@@ -202,7 +202,130 @@ int main() {
       Drawing a colored circle.
 */
 ```
+#### Multilevel Inheritance
+Multilevel inheritance involves a chain of inheritance with more than two levels.
+```cpp
+class A {
+    // Implementation
+};
 
+class B : public A {
+    // Implementation
+};
 
+class C : public B {
+    // Implementation
+};
 
+```
+#### 4. Hierarchical Inheritance
+Hierarchical inheritance involves multiple derived classes inheriting from a single base class.
+```cpp
+class Vehicle {
+    // Implementation
+};
+
+class Car : public Vehicle {
+    // Implementation specific to Car
+};
+
+class Bike : public Vehicle {
+    // Implementation specific to Bike
+};
+
+```
+#### Hybrid Inheritance
+Hybrid inheritance is a combination of two or more types of inheritance within a program. It often involves using multiple, multilevel, or hierarchical inheritance together.   
+Example: Combining multiple and multilevel inheritance.
+```cpp
+#include <iostream>
+
+// Base class
+class Shape {
+public:
+    void draw() {
+        std::cout << "Drawing a shape." << std::endl;
+    }
+};
+
+// Intermediate class inheriting from the base class
+class Circle : public Shape {
+public:
+    void drawCircle() {
+        std::cout << "Drawing a circle." << std::endl;
+    }
+};
+
+// Another base class
+class Color {
+public:
+    void fill() {
+        std::cout << "Filling with color." << std::endl;
+    }
+};
+
+// Derived class inheriting from both intermediate class and another base class
+class ColoredCircle : public Circle, public Color {
+public:
+    void drawColoredCircle() {
+        std::cout << "Drawing a colored circle." << std::endl;
+    }
+};
+
+int main() {
+    ColoredCircle myColoredCircle;
+    myColoredCircle.draw();             // Accessing methods from the first base class
+    myColoredCircle.drawCircle();       // Accessing methods from the intermediate class
+    myColoredCircle.fill();             // Accessing methods from the second base class
+    myColoredCircle.drawColoredCircle(); // Accessing the derived class method
+    return 0;
+}
+
+```
+#### Virtual Inheritance
+Virtual inheritance is used to address the Diamond Problem in multiple inheritance.
+```cpp
+#include <iostream>
+
+// Base class with virtual keyword
+class Shape {
+public:
+    virtual void draw() {
+        std::cout << "Drawing a shape." << std::endl;
+    }
+};
+
+// Intermediate classes with virtual keyword
+class Circle : virtual public Shape {
+public:
+    void drawCircle() {
+        std::cout << "Drawing a circle." << std::endl;
+    }
+};
+
+class Color : virtual public Shape {
+public:
+    void fill() {
+        std::cout << "Filling with color." << std::endl;
+    }
+};
+
+// Derived class inheriting from both intermediate classes
+class ColoredCircle : public Circle, public Color {
+public:
+    void drawColoredCircle() {
+        std::cout << "Drawing a colored circle." << std::endl;
+    }
+};
+
+int main() {
+    ColoredCircle myColoredCircle;
+    myColoredCircle.draw();             // Accessing the virtual method from the base class
+    myColoredCircle.drawCircle();       // Accessing methods from the first intermediate class
+    myColoredCircle.fill();             // Accessing methods from the second intermediate class
+    myColoredCircle.drawColoredCircle(); // Accessing the derived class method
+    return 0;
+}
+
+```
 **Link: https://chat.openai.com/c/ba9e6f9b-d655-4f06-88e6-ecd466103988#introduction**
