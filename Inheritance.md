@@ -161,6 +161,47 @@ output:
       Drawing a circle.
 */
 ```
+#### Multiple Inheritance
+Multiple inheritance involves a derived class inheriting from two or more base classes.
+```cpp
+#include <iostream>
+
+// Base classes
+class Shape {
+public:
+    void draw() {
+        std::cout << "Drawing a shape." << std::endl;
+    }
+};
+
+class Color {
+public:
+    void fill() {
+        std::cout << "Filling with color." << std::endl;
+    }
+};
+
+// Derived class inheriting from multiple base classes
+class ColoredCircle : public Shape, public Color {
+public:
+    void drawColoredCircle() {
+        std::cout << "Drawing a colored circle." << std::endl;
+    }
+};
+
+int main() {
+    ColoredCircle myColoredCircle;
+    myColoredCircle.draw();             // Accessing methods from the first base class
+    myColoredCircle.fill();             // Accessing methods from the second base class
+    myColoredCircle.drawColoredCircle(); // Accessing the derived class method
+    return 0;
+}
+/*output:
+      Drawing a shape.
+      Filling with color.
+      Drawing a colored circle.
+*/
+```
 
 
 
