@@ -127,8 +127,40 @@ Shape* shapePtr = new Circle();
 shapePtr->draw(); // Calls draw() of the Circle class.
 ```
 
-### Multiple Inheritance
+### Types of inheritance
+#### Single inheritance.
+Single inheritance involves a derived class inheriting from only one base class.
+```cpp
+#include <iostream>
 
+// Base class
+class Shape {
+public:
+    void draw() {
+        std::cout << "Drawing a shape." << std::endl;
+    }
+};
+
+// Derived class inheriting from a single base class
+class Circle : public Shape {
+public:
+    void drawCircle() {
+        std::cout << "Drawing a circle." << std::endl;
+    }
+};
+
+int main() {
+    Circle myCircle;
+    myCircle.draw();       // Accessing the base class method
+    myCircle.drawCircle(); // Accessing the derived class method
+    return 0;
+}
+/*
+output:
+      Drawing a shape.
+      Drawing a circle.
+*/
+```
 
 
 
