@@ -115,7 +115,7 @@ public:
 
 ```
 #### Polymorphism
-Polymorphism allows a base class pointer to refer to objects of derived classes and invoke their specific methods.
+Polymorphism allows a base class pointer to refer to objects of derived classes and access their specific methods.
 Example:
 ```cpp
 Shape* shapePtr = new Circle();
