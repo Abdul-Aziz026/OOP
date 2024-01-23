@@ -67,7 +67,8 @@ int main() {
     return 0;
 }
 ```
-
+#### 2. Runtime Polymorphism (Dynamic Binding)
+This type of polymorphism is achieved by Function Overriding. Late binding and dynamic polymorphism are other names for runtime polymorphism.
 
 
 
