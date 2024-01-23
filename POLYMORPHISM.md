@@ -19,9 +19,9 @@ polymorphism refers to the ability of a function or object to perform in differe
 In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. A real-life example of polymorphism is a person who at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee.
 
 ### Types of Polymorphism
-#### Compile-time Polymorphism (Static Binding)
+#### 1. Compile-time Polymorphism (Static Binding)
 Compile-time polymorphism is achieved through function and operator overloading. The compiler determines the appropriate function or operator at compile-time based on the provided arguments.
-#### Function Overloading:
+#### 1.1 Function Overloading:
 When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, this is known as Function Overloading.
 ```cpp
 class MathOperations {
@@ -30,7 +30,7 @@ public:
     double add(double a, double b);
 };
 ```
-#### Operator Overloading:
+#### 1.2 Operator Overloading:
 define how operators work with custom data types.   
 has the ability to provide the operators with a special meaning for a data type.
 ```cpp
