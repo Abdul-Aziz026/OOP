@@ -4,10 +4,10 @@
 
 1. Introduction
 2. Types of Polymorphism
-    - Compile-time Polymorphism (Static Binding)
+    1. Compile-time Polymorphism (Static Binding)
        - Function Overloading
        - Operator Overloading
-    - Runtime Polymorphism (Dynamic Binding)
+    2. Runtime Polymorphism (Dynamic Binding)
 3. Virtual Functions
 4. Abstract Classes and Pure Virtual Functions
 5. Polymorphism in Practice
