@@ -21,5 +21,55 @@ In simple words, we can define polymorphism as the ability of a message to be di
 ### Types of Polymorphism
 #### Compile-time Polymorphism (Static Binding)
 Compile-time polymorphism is achieved through function and operator overloading. The compiler determines the appropriate function or operator at compile-time based on the provided arguments.
+#### Function Overloading:
+When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, this is known as Function Overloading.
+```cpp
+class MathOperations {
+public:
+    int add(int a, int b);
+    double add(double a, double b);
+};
+```
+#### Operator Overloading:
+define how operators work with custom data types.   
+has the ability to provide the operators with a special meaning for a data type.
+```cpp
+#include <iostream>
+using namespace std;
+
+class Vector {
+private:
+    double x, y;
+public:
+    // Constructor
+    Vector(double x_val = 0.0, double y_val = 0.0) : x(x_val), y(y_val) {}
+    // Overloading the + operator for vector addition
+    Vector operator+(const Vector& other) const {
+        return Vector(x + other.x, y + other.y);
+    }
+    // Overloading the << operator for convenient output
+    void display() {
+        cout << x << ", " << y ;
+    }
+};
+
+int main() {
+    // Creating vectors
+    Vector v1(2.0, 3.0);
+    Vector v2(1.5, 2.5);
+
+    // Using the overloaded + operator for vector addition
+    Vector sum = v1 + v2;
+    cout << "Sum of "; v1.display();
+    cout << " and " ; v2.display();
+    cout << " = "; sum.display();
+    cout << endl ;
+    return 0;
+}
+```
+
+
+
+
 
 
