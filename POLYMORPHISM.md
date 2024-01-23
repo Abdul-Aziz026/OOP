@@ -5,13 +5,13 @@
 1. Introduction
 2. Types of Polymorphism
     - Compile-time Polymorphism (Static Binding)
+       - Function Overloading
+       - Operator Overloading
     - Runtime Polymorphism (Dynamic Binding)
-3. Function Overloading
-4. Operator Overloading
-5. Virtual Functions
-6. Abstract Classes and Pure Virtual Functions
-7. Polymorphism in Practice
-8. Conclusion
+3. Virtual Functions
+4. Abstract Classes and Pure Virtual Functions
+5. Polymorphism in Practice
+6. Conclusion
 
 ### Introduction:
 **polymorphism** comes from Greek, where "poly" means many and "morph" means form.
