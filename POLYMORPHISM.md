@@ -9,7 +9,7 @@
        - Operator Overloading
     2. Runtime Polymorphism (Dynamic Binding)
        - Function Overriding
-3. Benefits Of Polymorphism 
+3. Advantages Of Polymorphism 
 6. Conclusion
 
 ### Introduction:
@@ -128,7 +128,7 @@ int main()
         Called GFG_Base print function
 */
 ```
-### Advantages
+### Advantages Of Polymorphism 
 - Code Reusability
 - Flexibility and Adaptability
 - Dynamic Binding
