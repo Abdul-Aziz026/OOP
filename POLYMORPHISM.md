@@ -72,7 +72,58 @@ int main() {
 This type of polymorphism is achieved by Function Overriding.   
 Late binding and dynamic polymorphism are other names for runtime polymorphism.   
 2.1 Function Overriding
+```cpp
+// C++ Program to demonstrate
+// the Virtual Function
+#include <iostream>
+using namespace std;
 
+// Declaring a Base class
+class Base {
+
+public:
+    // virtual function
+    virtual void display()
+    {
+        cout << "Called virtual Base Class function"
+            << "\n";
+    }
+    void print()
+    {
+        cout << "Called GFG_Base print function"
+            << "\n\n";
+    }
+};
+
+// Declaring a Child Class
+class Child : public Base {
+public:
+    void display()
+    {
+        cout << "Called GFG_Child Display Function"
+            << "\n\n";
+    }
+    void print()
+    {
+        cout << "Called GFG_Child print Function"
+            << "\n\n";
+    }
+};
+
+// Driver code
+int main()
+{
+    // Create a reference of class GFG_Base
+    Base* base;
+    Child child;
+    base = &child;
+    // This will call the virtual function
+    base->Base::display();
+    base->display();
+    base->print();
+    return 0;
+}
+```
 
 
 
