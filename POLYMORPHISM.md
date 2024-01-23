@@ -123,6 +123,12 @@ int main()
     base->print();
     return 0;
 }
+
+/* output:
+        Called virtual Base Class function
+        Called GFG_Child Display Function
+        Called GFG_Base print function
+*/
 ```
 
 
