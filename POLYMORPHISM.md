@@ -8,6 +8,7 @@
        - Function Overloading
        - Operator Overloading
     2. Runtime Polymorphism (Dynamic Binding)
+       - Function Overriding
 3. Virtual Functions
 4. Abstract Classes and Pure Virtual Functions
 5. Polymorphism in Practice
@@ -70,7 +71,7 @@ int main() {
 #### 2. Runtime Polymorphism (Dynamic Binding)
 This type of polymorphism is achieved by Function Overriding.   
 Late binding and dynamic polymorphism are other names for runtime polymorphism.   
-
+2.1 Function Overriding
 
 
 
