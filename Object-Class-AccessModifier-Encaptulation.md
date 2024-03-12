@@ -142,8 +142,8 @@ Encapsulation is a key concept in C++ that involves bundling data (variables) an
 
 #### Benefits of Encapsulation:
 
-Data Hiding: Keeps internal details private.
-Modularity: Organizes code into self-contained units.
+Data Hiding: Keeps internal details private.   
+Modularity: Organizes code into self-contained units.   
 Flexibility: Allows changing internal implementation without affecting external code.
 #### How it Works:
 <ins>Private and Public Members:</ins>
