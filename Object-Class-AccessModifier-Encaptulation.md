@@ -61,6 +61,11 @@ output:
 - works opposite to constructor; 
 - it destructs the objects of classes.
 - Destructor is an instance member function that is called automatically whenever an object is going to be destroyed.
+
+### Constructors Access specifiers
+Constructors can be defined as public, protected, or private as per the requirements. By default or default constructors, which are created by the compiler are declared as the public. If the constructor is created as private, then we are not able to create its object.
+When there is no requirement of the object of a class (in a situation when all class members are static) we can define its constructor as private.
+Usually, constructors are defined as public because constructors are used to create an object and initialize the class data members for the object. An object is always created from outside of class, which justifies making constructors public.
 ```cpp
 #include <iostream>
 using namespace std;
