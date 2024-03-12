@@ -43,8 +43,6 @@ int main() {
 output:
         Values: 10
         Values: 20
-
-
 */
 ```
 
