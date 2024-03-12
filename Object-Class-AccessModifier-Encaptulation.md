@@ -39,6 +39,13 @@ int main() {
 
     return 0;
 }
+/*
+output:
+        Values: 10
+        Values: 20
+
+
+*/
 ```
 
 #### <ins>Importent Note:</ins> class state in variable and behaviour is function.
