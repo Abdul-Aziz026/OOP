@@ -200,6 +200,63 @@ int main() {
 */
 ```
 
+## Static method...
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+static int x;
+
+class MyClass {
+public:
+    // Member variables (data members)
+    static string versity ;
+    string name, id;
+    int age;
+    MyClass(string name, string id, int age) {
+        x = 20;
+        this->name = name;
+        this->id = id;
+        this->age = age;
+    }
+    static int sum(int a, int b) {
+        return a + b ;
+    }
+    // Member functions
+    void display();
+};
+
+string MyClass::versity = "BSMRSTU";
+
+// Member function definition (implementation)
+void MyClass::display() {
+    cout << "Versity Name: " << versity << endl;
+    cout << "Name: " << name << endl;
+    cout << "Id: " << id << endl;
+    cout << "Age: " << age << endl;
+}
+
+int main() {
+    // Object creation
+    MyClass obj1("Abdul_Aziz", "18CSE026", 25);
+
+    // Accessing member variables and calling member functions
+    obj1.display();
+    // static method can be accessed without object instance...
+    cout << "sum of 100 and 200 is : " << MyClass::sum(100, 200) << endl;
+
+    return 0;
+}
+/*
+        Versity Name: BSMRSTU
+        Name: Abdul_Aziz
+        Id: 18CSE026
+        Age: 25
+        sum of 100 and 200 is : 300
+*/
+```
+
 ### Access Modifier
 In C++, access modifiers are keywords that specify the visibility and accessibility of class members (variables and functions) from outside the class.   
 There are three main access modifiers in C++: **public, private, and protected.**
