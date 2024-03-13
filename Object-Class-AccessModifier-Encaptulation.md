@@ -66,6 +66,7 @@ output:
 Constructors can be defined as public, protected, or private as per the requirements. By default or default constructors, which are created by the compiler are declared as the public. If the constructor is created as private, then we are not able to create its object.
 When there is no requirement of the object of a class (in a situation when all class members are static) we can define its constructor as private.
 Usually, constructors are defined as public because constructors are used to create an object and initialize the class data members for the object. An object is always created from outside of class, which justifies making constructors public.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -110,6 +111,95 @@ int main() {
             Distroy object...
 */
 ```
+
+## Static Variable and function:
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class MyClass {
+public:
+    // Member variables (data members)
+    static string versity ;
+    string name, id;
+    int age;
+    MyClass(string name, string id, int age) {
+        this->name = name;
+        this->id = id;
+        this->age = age;
+    }
+    // Member functions
+    void display();
+};
+
+string MyClass::versity = "BSMRSTU";
+
+// Member function definition (implementation)
+void MyClass::display() {
+    cout << "Versity Name: " << versity << endl;
+    cout << "Name: " << name << endl;
+    cout << "Id: " << id << endl;
+    cout << "Age: " << age << endl;
+}
+
+class MyClass1 {
+public:
+    // Member variables (data members)
+    static string versity ;
+    string name, id;
+    int age;
+    MyClass1(string name, string id, int age) {
+        this->name = name;
+        this->id = id;
+        this->age = age;
+    }
+    // Member functions
+    void display();
+};
+
+string MyClass1::versity = "DU";
+
+// Member function definition (implementation)
+void MyClass1::display() {
+    cout << "Versity Name: " << versity << endl;
+    cout << "Name: " << name << endl;
+    cout << "Id: " << id << endl;
+    cout << "Age: " << age << endl;
+}
+
+int main() {
+    // Object creation
+    MyClass obj1("Abdul_Aziz", "18CSE026", 25);
+    MyClass obj2("Khatun", "18CSE021", 24);
+
+    // Accessing member variables and calling member functions
+    // obj1.myInt = 10;
+    obj1.display();
+    obj2.display();
+
+    cout << endl;
+    MyClass1 obj3("Abdul_Aziz", "18CSE026", 25);
+    obj3.display();
+    return 0;
+}
+/*
+        Versity Name: BSMRSTU
+        Name: Abdul_Aziz
+        Id: 18CSE026
+        Age: 25
+        Versity Name: BSMRSTU
+        Name: Khatun
+        Id: 18CSE021
+        Age: 24
+
+        Versity Name: DU
+        Name: Abdul_Aziz
+        Id: 18CSE026
+        Age: 25
+*/
+```
+
 ### Access Modifier
 In C++, access modifiers are keywords that specify the visibility and accessibility of class members (variables and functions) from outside the class.   
 There are three main access modifiers in C++: **public, private, and protected.**
