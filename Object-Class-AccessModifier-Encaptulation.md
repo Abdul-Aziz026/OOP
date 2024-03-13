@@ -113,6 +113,7 @@ int main() {
 ```
 
 ## Static Variable and function:
+### 1. Static Variable...
 ```cpp
 #include <iostream>
 #include <string>
@@ -200,7 +201,7 @@ int main() {
 */
 ```
 
-## Static method...
+## 2. Static function...
 ```cpp
 #include <iostream>
 #include <string>
