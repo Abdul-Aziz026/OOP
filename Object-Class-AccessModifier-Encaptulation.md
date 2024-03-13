@@ -246,6 +246,7 @@ int main() {
     obj1.display();
     // static method can be accessed without object instance...
     cout << "sum of 100 and 200 is : " << MyClass::sum(100, 200) << endl;
+    cout << "sum of 100 and 200 is : " << obj1.sum(100, 200) << endl;
 
     return 0;
 }
