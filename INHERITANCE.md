@@ -285,6 +285,8 @@ int main() {
 #### Virtual Inheritance
 Virtual inheritance is used to address the Diamond Problem in multiple inheritance.
 ![image](https://github.com/Abdul-Aziz026/OOP/assets/57495952/5e0d12e5-9c89-4018-9a03-a6194ff67442)
+![image](https://github.com/Abdul-Aziz026/OOP/assets/57495952/b745de22-be95-4053-906b-e50a9dbc1156)
+
 ![image](https://github.com/Abdul-Aziz026/OOP/assets/57495952/3b0892f2-0e19-4122-a9ed-6f80a64ed081)
 
 ```cpp
