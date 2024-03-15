@@ -52,6 +52,12 @@ signed main() {
           This is Base Show Class
 */
 ```
+## Note:
+```cpp
+summary, when you call a function through a base class pointer:
+Non-virtual functions are resolved based on the pointer's declared type.
+Virtual functions are resolved based on the actual object's type.
+```
 
 ### Abstract class vs Abstract Class...
 **Instantiation:**
