@@ -59,7 +59,7 @@ Non-virtual functions are resolved based on the pointer's declared type.
 Virtual functions are resolved based on the actual object's type.
 ```
 
-### Abstract class vs Abstract Class...
+### Abstract class vs Interface Class...
 **Instantiation:**
 - **<ins>Abstract Classes:</ins>** You cannot create an object (instance) directly from an abstract class. Abstract classes are like blueprints that need to be extended by other classes.
 - **<ins>Interfaces:</ins>** Similarly, you cannot create an object directly from an interface. Interfaces are designed to be implemented by other classes, providing a way to enforce a specific set of behaviors.
