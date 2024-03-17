@@ -65,6 +65,9 @@ int main() {
     cout << endl ;
     return 0;
 }
+/*
+    Sum of 2, 3 and 1.5, 2.5 = 3.5, 5.5
+*/
 ```
 #### 2. Runtime Polymorphism (Dynamic Binding)
 This type of polymorphism is achieved by Function Overriding.   
