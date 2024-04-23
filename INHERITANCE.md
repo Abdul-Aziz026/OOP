@@ -392,4 +392,6 @@ public:
 };
 ```
 
+Next: ** https://github.com/Abdul-Aziz026/OOP/blob/main/ABSTRACTION%20and%20VIRTUAL_FUNCTION.md **
+
 **Link: https://chat.openai.com/c/ba9e6f9b-d655-4f06-88e6-ecd466103988#introduction**
