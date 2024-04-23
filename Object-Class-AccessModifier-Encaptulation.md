@@ -338,6 +338,9 @@ public:
 };
 ```
 
+
+Next: ** https://github.com/Abdul-Aziz026/OOP/blob/main/INHERITANCE.md **
+
 **<ins>Note:</ins>Encapsulation is a fundamental principle that enhances code security, organization, and flexibility in C++. It's about bundling related data and methods together for better software design.**
 
 ## .................@(INSHAALLAH YOU CAN DONE.ALLAH IS ALWAYS WITH YOU)...................
