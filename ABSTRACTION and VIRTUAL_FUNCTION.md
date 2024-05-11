@@ -57,6 +57,10 @@ signed main() {
 summary, when you call a function through a base class pointer:
 Non-virtual functions are called based on the pointer's declared type. // called base class function
 Virtual functions are resolved based on the actual object's type.      // called drive class function
+
+Base *ptr;
+ptr = &derv1;
+ptr -> show();
 ```
 
 ### Abstract class vs Interface Class...
